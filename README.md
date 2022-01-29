@@ -1,4 +1,4 @@
-
+![Burgerzilla Cover Photo](docs/images/burgerzilla_cover_photo.png)
 # BurgerZilla (Yemeksepeti & Patika.dev)
 
 This microservice aims to manage customer orders from hamburger restaurants.
@@ -18,6 +18,8 @@ Details TBD
 - Customer Order Management [CRUD]
 - Restaurant Order Management [CRUD]
 
+## API Reference
+Redirect to burgerzilla_api_ref.md file
 
 ## Tech Stack
 **Language:** Python 3.9 
