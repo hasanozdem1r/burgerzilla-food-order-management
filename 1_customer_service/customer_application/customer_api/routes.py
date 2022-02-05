@@ -4,6 +4,7 @@ Hasan Özdemir 02-05-2022
 """
 # path : root/1_customer_service/customer_application/customer_api/routes.py
 
+# TODO typing implementation
 from . import c_api_blueprint
 from .. import db,login_manager
 from ..models import Customer

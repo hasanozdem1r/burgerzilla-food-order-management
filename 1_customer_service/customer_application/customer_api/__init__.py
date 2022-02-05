@@ -1,5 +1,6 @@
 """
 This script is used to create blueprint object for customer api
+Hasan Özdemir 02-05-2022
 """
 # path :  root/1_customer_service/customer_application/customer_api/__init.py
 from flask import Blueprint

@@ -3,7 +3,7 @@ This script created to initialize configurations for Customer Microservice
 Hasan Özdemir 02-05-2022
 """
 # path : root/1_customer_service/config.py
-
+# TODO typing implementation
 from os import path
 from dotenv import load_dotenv
 
