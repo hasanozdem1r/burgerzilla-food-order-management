@@ -1,4 +1,4 @@
-![Burgerzilla Cover Photo](docs/images/burgerzilla_cover_photo.png)
+![Burgerzilla Cover Photo](3_project_docs/images/burgerzilla_cover_photo.png)
 # BurgerZilla (Yemeksepeti & Patika.dev)
 
 This microservice aims to manage customer orders from hamburger restaurants.
