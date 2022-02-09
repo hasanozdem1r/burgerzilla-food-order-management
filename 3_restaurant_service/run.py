@@ -1,5 +1,5 @@
 """
-This script is created to run Customer Microservice
+This script is created to run Restaurant Microservice
 Hasan Özdemir 02-07-2022
 """
 # path : root/3_restaurant_service/run.py
@@ -49,4 +49,4 @@ if __name__ == '__main__':
     """
     Application Entry Point : Run Flask Application
     """
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5003)
