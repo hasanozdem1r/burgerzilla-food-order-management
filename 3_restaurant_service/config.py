@@ -6,8 +6,12 @@ Hasan Özdemir 02-07-2022
 # TODO typing implementation
 from os import path
 from dotenv import load_dotenv
-from helpers import generate_connection_uri,generate_secret_key
+from utils.helpers import get_postgres_configurations,generate_secret_key
 
+# Configuration Variables taken from Windows Environment Variables
+POSTGRES_HOST, POSTGRES_PORT, POSTGRES_USER, POSTGRES_PWD = get_postgres_configurations()
+DB_CONNECTION_URI: str = f'postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PWD}@{POSTGRES_HOST}:' \
+                         f'{POSTGRES_PORT}/burgerzilla_customer'
 
 # dDotenv adds .env support to your flask project.
 # This is the file where we pass the environment variables.
@@ -22,7 +26,7 @@ class Config:
     DEBUG = False
     TESTING = False
     SECRET_KEY = generate_secret_key(32)
-    SQLALCHEMY_DATABASE_URI = generate_connection_uri('db_config.ini')
+    SQLALCHEMY_DATABASE_URI = DB_CONNECTION_URI
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
