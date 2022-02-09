@@ -1,4 +1,4 @@
-# root/2_customer_service/restaurant_application/__init__.py
+# root/3_customer_service/restaurant_application/__init__.py
 
 # TODO typing implementation
 import os, config

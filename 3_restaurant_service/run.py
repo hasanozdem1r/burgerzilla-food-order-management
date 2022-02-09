@@ -2,7 +2,7 @@
 This script is created to run Customer Microservice
 Hasan Özdemir 02-07-2022
 """
-# path : root/2_restaurant_service/run.py
+# path : root/3_restaurant_service/run.py
 
 # TODO typing implementation
 from flask import g

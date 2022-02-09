@@ -2,15 +2,17 @@
 This script is created to create customer model under limitations of ORM approach
 Hasan Özdemir 02-09-2022
 """
-# path : root/1_customer_service/customer_application/models.py
+# path : root/3_restaurant_service/restaurant_application/models.py
 
 # TODO typing implementation
+# import from __init__
 from . import db
-# for relationships
+# imports for relationships management
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
+# base class constructing
 Base=declarative_base()
 
 class RestaurantOwnersOrm(db.Model,Base):
