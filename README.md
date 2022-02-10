@@ -25,9 +25,11 @@ Redirect to burgerzilla_api_ref.md file
 ## Tech Stack
 **Language:** Python 3.9 
 
-**Database Server:** PostreSQL
+**Database Server:** PostgresSQL
 
 **Messaging Queue:** RabbitMQ
+
+**Libraries used during project** : Please follow the [link](4_project_docs/burgerzilla_libraries_reference.md)
 
 
 ## Lessons Learned
