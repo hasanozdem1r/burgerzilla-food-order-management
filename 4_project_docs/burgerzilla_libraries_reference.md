@@ -5,7 +5,7 @@ It makes Python Programming simpler and convenient for the programmer. Always be
 ```txt
 Simple is better than complex.
 ```
-## How to install library 
+### How to install library 
 There are a bunch of libraries which is built-in, and you do not need to install but also there are libraries which is stored
 in PyPi. The Python Package Index (PyPI) is a repository of software for the Python programming language.
 If we want to use 3rd party libraries we can download from this platform with PIP command.
@@ -28,13 +28,13 @@ There are lots of way to do it but let's talk about two common way.
 1. **requirements.txt** ; This requirements.txt file is used for specifying what python packages are required to run the project you are looking at.  Typically the requirements.txt file is located in the root directory of your project.
 2. **Poetry** ; 2nd Way
 
-## How I managed dependencies
+### How I managed dependencies
 I decided to use Poetry during my project because of various pros and nice features. 
 - Poetry comes with an exhaustive dependency resolver, which will always find a solution if it exists.
 - Poetry either uses your configured virtualenvs or creates its own to always be isolated from your system.
 - Poetry's commands are intuitive and easy to use, with sensible defaults while still being configurable.
 
-## Simple Poetry Application
+### Simple Poetry Application
 1. Create new Poetry Application
 ```bash
 poetry new burgerzilla
@@ -53,9 +53,19 @@ poetry install
 poetry run main.py
 ``` 
 
-
-
-
+### Libraries used during project
+* Database & OOP Integration
+  * Flask-Migrate
+  * SQLAlchemy
+  * alembic
+  * pydantic
+* Microservices
+  * Flask
+  * Flask-login
+* API Management
+  * flask-restx
+* Dependency Management
+  * poetry
 
 
 
