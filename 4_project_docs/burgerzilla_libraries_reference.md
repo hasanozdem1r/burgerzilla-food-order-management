@@ -64,8 +64,11 @@ poetry run main.py
   * Flask-login
 * API Management
   * flask-restx
+  * Flask-JWT-Extended
 * Dependency Management
   * poetry
+* Coding Convention
+  * flake8
 
 
 
