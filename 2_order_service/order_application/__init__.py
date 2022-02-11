@@ -1,5 +1,4 @@
 # root/2_order_service/order_application/__init__.py
-
 import os, config
 from flask import Flask
 from flask_login import LoginManager

@@ -4,7 +4,6 @@ Hasan Özdemir 02-05-2022
 """
 # path : root/1_customer_service/customer_application/models.py
 
-# TODO typing implementation
 from . import db
 
 
