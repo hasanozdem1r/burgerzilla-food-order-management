@@ -3,11 +3,9 @@ This script is created to run Customer Microservice
 Hasan Özdemir 02-05-2022
 """
 # path : root/1_customer_service/run.py
-
-# TODO typing implementation
 from flask import g
 from flask_migrate import Migrate
-from customer_application import models
+#from customer_application import models
 from flask_login import user_loaded_from_header
 from customer_application import create_app, db
 from flask.sessions import SecureCookieSessionInterface
