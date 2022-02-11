@@ -6,7 +6,7 @@ Hasan Özdemir 02-05-2022
 # TODO typing implementation
 from os import path
 from dotenv import load_dotenv
-from utils.helpers import get_postgres_configurations,generate_secret_key
+from utils.helpers import get_postgres_configurations , generate_secret_key
 
 # Configuration Variables taken from Windows Environment Variables
 POSTGRES_HOST, POSTGRES_PORT, POSTGRES_USER, POSTGRES_PWD = get_postgres_configurations()
