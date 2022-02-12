@@ -42,6 +42,11 @@ TBD
 What challenges did you face and how did you overcome them?
 
 TBD
+
+## Burgerzilla Architecture
+![](4_project_docs/images/burgerzilla_architectrue.jpg)
+
+
 ## Project Management
 
 | ID | Title                 | Status |

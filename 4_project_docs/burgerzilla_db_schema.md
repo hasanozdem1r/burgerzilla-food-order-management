@@ -1,5 +1,5 @@
 # BurgerZilla Project Database Schema
-![](images/burgerzilla_db_schema.png)
+![](images/burgerzilla_db_schema.jpg)
 
 With this document, it is aimed to make database and ORM developments easier in the future.
 
