@@ -81,7 +81,7 @@ def create_new_order() -> json:
             form_data = request.get_json()
             is_params_valid = check_add_order_keys(request_data=form_data)
             if is_params_valid:
-                # o_id,c_id, o_address,o_city,o_postal_code,o_phone_number,o_status,o_date
+                # get form data
                 o_id, c_id, o_address, o_city, o_postal_code, o_phone_number, o_status, o_date, order_details = get_add_order_params(
                     request_data=form_data)
                 # initialize order

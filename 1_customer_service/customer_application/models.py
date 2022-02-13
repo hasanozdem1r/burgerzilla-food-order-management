@@ -7,7 +7,7 @@ Hasan Özdemir 02-05-2022
 from . import db
 
 
-class Customer(db.Model):
+class CustomerOrm(db.Model):
     """Customer ORM Model definition"""
 
     # table name declaration
@@ -18,7 +18,7 @@ class Customer(db.Model):
     c_full_name = db.Column(db.String(100), nullable=False)
     c_address = db.Column(db.String(100), nullable=False)
     c_city = db.Column(db.String(25), nullable=False)
-    c_post_code = db.Column(db.Integer, nullable=False)
+    c_postal_code = db.Column(db.Integer, nullable=False)
     c_phone_number = db.Column(db.String(15), nullable=False)
 
     # creates a full string representation of an object
