@@ -1,5 +1,4 @@
 `
-![Burgerzilla Cover Photo](4_project_docs/images/burgerzilla_cover_photo.png)
 # BurgerZilla (Yemeksepeti & Patika.dev)
 
 This microservice aims to manage customer orders from hamburger restaurants.
@@ -16,10 +15,9 @@ I used Poetry for virtual environment because it's easier to use and manage the 
 
 Those instructions valid for every microservice
 Firstly initialize models on PostgresSQL 
+Customer Service Example
 ```bash
-flask db init
-flask db migrate
-flask db upgrade
+start customer_database.bat
 ``` 
 Run microservices
 ```bash
@@ -82,6 +80,14 @@ Please follow the [link](4_project_docs/burgerzilla_api_reference.md)
 |  6  | Dockerization      | NONE   |
 |  7  | RabbitMQ Queue     | NONE   |
 |  8  | JWT Implementation | NONE   |
+|  8  | JWT Implementation | NONE   |
+|  9  | Flake8 Lint Format | OK     |
+
+## Footnote
+1. Project is not completed.
+2. I've spent on it totally 30 hours, but it was not enough for me.
+3. I just added couple of endpoints and that's all.
+4. Good luck to other candidates :)
 
 ## License
 
