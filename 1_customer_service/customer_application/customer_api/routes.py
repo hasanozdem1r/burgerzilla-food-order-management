@@ -16,8 +16,8 @@ ORDER_API_ROOT:str = "http://localhost:5002/burgerzilla-order/1.0.0"
 
 
 # GET : http://0.0.0.0:5001/burgerzilla/v1/customers
-@c_api_blueprint.route(f'{CUSTOMER_API_ROOT}/customers1', methods=['GET'])
-def get_all_orders() -> json:
+@c_api_blueprint.route(f'{CUSTOMER_API_ROOT}/customers', methods=['GET'])
+def get_all_customers() -> json:
     """
     This endpoint is used to retrieve all customers
     :return: <flask.json> return all customers

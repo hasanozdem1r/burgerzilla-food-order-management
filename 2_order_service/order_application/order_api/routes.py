@@ -69,7 +69,7 @@ def get_order_based_on_customer_and_order():
         make_general_response(str(general_error))
 
 
-# POST : http://0.0.0.0:5001/burgerzilla-order/1.0.0/orderx
+# POST : http://0.0.0.0:5001/burgerzilla-order/1.0.0/order
 @o_api_blueprint.route(f'{API_ROOT}/order', methods=['POST'])
 def create_new_order() -> json:
     """
