@@ -5,6 +5,10 @@
 This microservice aims to manage customer orders from hamburger restaurants.
 I provide this solution with microservice architecture under the limitation of REST-API
 
+## Prerequisites
+1. Python 3.9 
+2. [Poetry](https://python-poetry.org/)  for dependency management
+3. PostgresSQL
 
 ## Installation
 
@@ -35,17 +39,22 @@ Please follow the [link](4_project_docs/burgerzilla_api_reference.md)
 
 **Database Server:** PostgresSQL
 
-**Libraries used during project** : Please follow the [link](4_project_docs/burgerzilla_libraries_reference.md)
+**Libraries** : Please follow the [link](4_project_docs/burgerzilla_libraries_reference.md)
+
 
 
 ## Lessons Learned
 
-What did you learn while building this project? 
+1. What did you learn while building this project? 
+    * I get used to more to Poetry
+    * I increased my know how about relational databases for big projects
+    * 
 
-1. My awareness of microservice increased.
-2. I get used to more features of Poetry
-
-
+2. What challenges did you face and how did you overcome them?
+   * My biggest challenge was about microservices. I knew definition, but I had no experience on it.
+   * As a solution full one week I've done reading on microservices.io then I connected with Chris Richardson via Linkedin and find out answers for my question.
+   * Finally, after 1 week I was able to design my architecture and database diagram
+    
 
 ## Burgerzilla Architecture
 ![](4_project_docs/images/burgerzilla_architectrue.jpg)
