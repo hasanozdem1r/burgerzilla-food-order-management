@@ -9,13 +9,14 @@ from . import db
 # imports for relationships management
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from sqlalchemy import ForeignKey,Enum
+from sqlalchemy import ForeignKey, Enum
 # column type related libraries
 from datetime import datetime
 import enum
 
 # base class constructing
 Base = declarative_base()
+
 
 class OrderStatus(enum.Enum):
     """
@@ -27,7 +28,6 @@ class OrderStatus(enum.Enum):
     R_FAIL = "R-CANCELLED"  # restaurant is cancelled
     C_FAIL = "C-CANCELLED"  # customer is cancelled
     FINISH = "COMPLETED"  # order completed
-
 
 
 class OrdersOrm(db.Model, Base):
@@ -43,8 +43,8 @@ class OrdersOrm(db.Model, Base):
     o_city = db.Column(db.String(25), nullable=False)
     o_postal_code = db.Column(db.Integer, nullable=True)
     o_phone_number = db.Column(db.String(15), nullable=False)
-    o_status = db.Column(Enum(OrderStatus),default=OrderStatus.OK)
-    o_date = db.Column(db.Date, nullable=False,default=datetime.utcnow)
+    o_status = db.Column(Enum(OrderStatus), default=OrderStatus.OK)
+    o_date = db.Column(db.Date, nullable=False, default=datetime.utcnow)
 
 
 class OrderDetailsOrm(db.Model, Base):
