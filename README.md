@@ -28,7 +28,7 @@ poetry run python run.py
 - Restaurant Order Management [CRUD]
 
 ## API Reference
-Redirect to burgerzilla_api_ref.md file
+Please follow the [link](4_project_docs/burgerzilla_api_reference.md)
 
 ## Tech Stack
 **Language:** Python 3.9 

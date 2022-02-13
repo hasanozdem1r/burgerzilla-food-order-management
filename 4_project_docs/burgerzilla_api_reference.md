@@ -1,34 +1,79 @@
 
 # BurgerZilla REST API Documentation
 
-Explanation TBD
+### Current APIs
+1. Customer-API
+2. Order-API
+3. Restaurant-API
 
 
-## API Reference
+## Customer-API-Reference
 
-
-All methods TBD
-#### Get all items
+#### Get all customers
+```http
+  GET http://0.0.0.0:5001/burgerzilla/v1/customers
+```
+#### Get all orders based on customer id (This method use Order-API)
+```http
+  GET http://0.0.0.0:5001/burgerzilla-customer/1.0.0/orders?customer-id=1
+```
+#### Create a new customer
 
 ```http
-  GET /api/items
+  Reference to routes.py
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+## Order-API Reference
 
-#### Get item
 
+####  Get all orders based on customer-id (actual endpoint)
 ```http
-  GET /api/items/${id}
+  GET localhost:5002/burgerzilla-order/1.0.0/orders?customer-id
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
 
-#### add(num1, num2)
+####  Get all orders based on customer-id and order-id
+```http
+  GET localhost:5002/burgerzilla-order/1.0.0/order?customer-id&order-id
+```
 
-Takes two numbers and returns the sum.
+#### Create a new order
+```http
+  POST http://0.0.0.0:5001/burgerzilla-order/1.0.0/order
+```
+Form data
+```json
+  {
+  "o-id":[
+    {
+       "o-d-id":1,
+       "o-id":32,
+       "p-id":1,
+       "o-quantity":2,
+       "order-price":2
+    },
+    {
+       "o-d-id":1,
+       "o-id":1,
+       "p-id":1,
+       "o-quantity":2,
+       "order-price":2
+    },
+    {
+       "o-d-id":1,
+       "o-id":1,
+       "p-id":1,
+       "o-quantity":2,
+       "order-price":2
+    }
+  ],
 
+  "c-id": 1,
+  "o-address": "Metro City",
+  "o-city": "2016",
+  "o-postal-code": "12",
+  "o-status":"OK",
+  "o-phone-number":"123456",
+  "o-date":"12/02/02"
+}
+```
