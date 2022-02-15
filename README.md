@@ -1,4 +1,4 @@
-
+![](4_project_docs/images/burgerzilla_cover_photo.png)
 # Food Order Management with Microservices
 
 This project aim to create bridge between customer and restaurant owners. 
@@ -6,6 +6,16 @@ This project aim to create bridge between customer and restaurant owners.
 Customers and restaurant owners can run their own operations based on products 
 
 I decided to provide solutions with microservices approach regarding to suitability
+
+## Table of Contents
+  * [1.Prerequisites](#1prerequisites)
+  * [2.Installation](#2installation)
+  * [3.Features](#3features)
+  * [4.API Reference](#4api-reference)
+  * [5.Tech Stack](#5tech-stack)
+  * [6.Burgerzilla Architecture](#6burgerzilla-architecture)
+  * [7.Environment Variables](#7environment-variables)
+  * [8.License](#8license)
 
 ## 1.Prerequisites
 1. Python 3.9 
@@ -53,14 +63,7 @@ To run this project, you will need to add the following environment variables to
 
 `POSTGRES_HOST`, `POSTGRES_PORT`,`POSTGRES_USER`,  `POSTGRES_PWD`
 
-
-
-
-
-
-
-
-## License
+## 8.License
 
 [Massachusetts Institute of Technology](https://choosealicense.com/licenses/mit/)
 
