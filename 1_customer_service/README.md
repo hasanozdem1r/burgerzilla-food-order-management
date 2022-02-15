@@ -14,6 +14,7 @@ Initialize models on PostgresSQL
 ```bash
 start customer_database.bat
 ``` 
+### Let's run our application
 Run the project with this command
 ```bash
 cd /1_customer_service/

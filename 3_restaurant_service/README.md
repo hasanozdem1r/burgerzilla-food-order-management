@@ -14,6 +14,7 @@ Initialize models on PostgresSQL
 ```bash
 start restaurant_database.bat
 ```
+### Let's run our application
 Run the project with this command
 ```bash
 cd /3_restaurant_service/
