@@ -11,7 +11,7 @@ class CustomerOrm(db.Model):
     """Customer ORM Model definition"""
 
     # table name declaration
-    __tablename__ = 'Customer'
+    __tablename__ = "Customer"
     # table columns declaration
     c_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     c_email = db.Column(db.String(255), nullable=False)
@@ -28,7 +28,7 @@ class CustomerOrm(db.Model):
         The goal of __repr__ is to be unambiguous
         :return: <str> representation of customer object
         """
-        return f'<Full Name :{self.c_full_name}>'
+        return f"<Full Name :{self.c_full_name}>"
 
     def convert_to_json(self) -> dict:
         """
@@ -36,10 +36,10 @@ class CustomerOrm(db.Model):
         :return: <dict> JSON based API response
         """
         return {
-            'c_email': self.c_email,
-            'c_full_name': self.c_full_name,
-            'c_address': self.c_address,
-            'c_city': self.c_city,
-            'c_post_code': self.c_post_code,
-            'c_phone_number': self.c_phone_number
+            "c_email": self.c_email,
+            "c_full_name": self.c_full_name,
+            "c_address": self.c_address,
+            "c_city": self.c_city,
+            "c_post_code": self.c_post_code,
+            "c_phone_number": self.c_phone_number,
         }

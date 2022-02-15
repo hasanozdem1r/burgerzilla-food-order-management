@@ -5,7 +5,8 @@ Hasan Özdemir 02-05-2022
 # path : root/1_customer_service/run.py
 from flask import g
 from flask_migrate import Migrate
-#from customer_application import models
+
+# from customer_application import models
 from flask_login import user_loaded_from_header
 from customer_application import create_app, db
 from flask.sessions import SecureCookieSessionInterface
@@ -15,8 +16,6 @@ from flask.sessions import SecureCookieSessionInterface
 app = create_app()
 # migrations
 migrate = Migrate(app, db)
-
-
 
 
 # disabling Session Cookies for APIs
@@ -31,20 +30,21 @@ class CustomSessionInterface(SecureCookieSessionInterface):
         :param kwargs: pass keyword arguments
         :return:
         """
-        if g.get('login_via_header'):
+        if g.get("login_via_header"):
             return
-        return super(CustomSessionInterface, self).save_session(*args,
-                                                                **kwargs)
+        return super(CustomSessionInterface, self).save_session(*args, **kwargs)
+
 
 app.session_interface = CustomSessionInterface()
+
 
 @user_loaded_from_header.connect
 def user_loaded_from_header(self, user=None):
     g.login_via_header = True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     """
     Application Entry Point : Run Flask Application
     """
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host="0.0.0.0", port=5001)

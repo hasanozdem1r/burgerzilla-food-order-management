@@ -6,6 +6,6 @@ Hasan Özdemir 02-05-2022
 from flask import Blueprint
 
 # create the blueprint object
-r_api_blueprint=Blueprint('restaurant_api',__name__)
+r_api_blueprint = Blueprint("restaurant_api", __name__)
 #  import the routes.py
 from . import routes

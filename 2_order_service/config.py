@@ -9,13 +9,20 @@ from dotenv import load_dotenv
 from utils.helpers import get_postgres_configurations, generate_secret_key
 
 # Configuration Variables taken from Windows Environment Variables
-POSTGRES_HOST, POSTGRES_PORT, POSTGRES_USER, POSTGRES_PWD = get_postgres_configurations()
-DB_CONNECTION_URI: str = f'postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PWD}@{POSTGRES_HOST}:' \
-                         f'{POSTGRES_PORT}/burgerzilla_order'
+(
+    POSTGRES_HOST,
+    POSTGRES_PORT,
+    POSTGRES_USER,
+    POSTGRES_PWD,
+) = get_postgres_configurations()
+DB_CONNECTION_URI: str = (
+    f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PWD}@{POSTGRES_HOST}:"
+    f"{POSTGRES_PORT}/burgerzilla_order"
+)
 
 # dDotenv adds .env support to your flask project.
 # This is the file where we pass the environment variables.
-dotenv_path = path.join(path.dirname(__file__), '.env')
+dotenv_path = path.join(path.dirname(__file__), ".env")
 if path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 

@@ -19,7 +19,7 @@ def create_app():
     # initialize Flask object
     app = Flask(__name__)
     # environment configuration
-    environment_configuration = os.environ['CONFIGURATION_SETUP']
+    environment_configuration = os.environ["CONFIGURATION_SETUP"]
     app.config.from_object(environment_configuration)
 
     db.init_app(app)
@@ -28,6 +28,7 @@ def create_app():
     with app.app_context():
         # import blueprint
         from .customer_api import c_api_blueprint
+
         # register to app object
         app.register_blueprint(c_api_blueprint)
         return app
