@@ -1,43 +1,45 @@
 `
-# BurgerZilla (Yemeksepeti & Patika.dev)
+# Food Order Management with Microservices
 
-This microservice aims to manage customer orders from hamburger restaurants.
-I provide this solution with microservice architecture under the limitation of REST-API
+This project aim to create bridge between customer and restaurant owners. 
+
+Customers and restaurant owners can run their own operations based on products 
+
+I decided to provide solutions with microservices approach regarding to suitability
 
 ## Prerequisites
 1. Python 3.9 
 2. [Poetry](https://python-poetry.org/)  for dependency management
-3. PostgresSQL
+3. PostgresSQL Local Server
+4. PyCharm / Visual Studio Code
 
 ## Installation
 
 I used Poetry for virtual environment because it's easier to use and manage the dependencies.
 
-Those instructions are valid for all microservices under this repository.
-Firstly initialize models on PostgresSQL 
-Customer Service Example
-```bash
-start customer_database.bat
-``` 
-Run microservices
-```bash
-poetry run python run.py
-```     
+In this section I will be providing installations about prerequisites. 
+1. [Python 3.9](https://python.org/)
+2. [Python Poetry](https://python-poetry.org/docs/)
+3. [PostgresSQL](https://www.postgresql.org/)
+4. [Pycharm](https://www.jetbrains.com/pycharm/) & [Visual Studio Code](https://code.visualstudio.com/)
+
 
 ## Features
-
-- Customer Order Management [CRUD]
-- Restaurant Order Management [CRUD]
+Please follow the links for further reading about microservices
+- [Customer Microservice](1_customer_service/README.md)
+- [Order Microservice](2_order_service/README.md)
+- [Restaurant Microservice](3_restaurant_service/README.md)
 
 ## API Reference
-Please follow the [link](4_project_docs/burgerzilla_api_reference.md)
+Please follow the link for further reading about [API's reference](4_project_docs/burgerzilla_api_reference.md)
+
 
 ## Tech Stack
 **Language:** Python 3.9 
 
 **Database Server:** PostgresSQL
 
-**Libraries** : Please follow the [link](4_project_docs/burgerzilla_libraries_reference.md)
+**Libraries** : Please follow the [link](4_project_docs/burgerzilla_libraries_reference.md) for details.
 
 
 
@@ -69,7 +71,6 @@ Please follow the [link](4_project_docs/burgerzilla_api_reference.md)
 |  5  | Documentation      | OK     |
 |  6  | Dockerization      | NONE   |
 |  7  | RabbitMQ Queue     | NONE   |
-|  8  | JWT Implementation | NONE   |
 |  8  | JWT Implementation | NONE   |
 |  9  | Flake8 Lint Format | OK     |
 
