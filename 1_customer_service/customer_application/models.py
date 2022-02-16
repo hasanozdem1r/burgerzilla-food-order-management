@@ -3,8 +3,8 @@ This script is created to create customer model under limitations of ORM approac
 Hasan Özdemir 02-05-2022
 """
 # path : root/1_customer_service/customer_application/models.py
-
-from . import db
+# from . import db original
+from __init__ import db
 
 
 class CustomerOrm(db.Model):
