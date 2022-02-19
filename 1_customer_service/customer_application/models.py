@@ -4,7 +4,7 @@ Hasan Özdemir 02-05-2022
 """
 # path : root/1_customer_service/customer_application/models.py
 # from . import db original
-from __init__ import db
+from . import db
 
 
 class CustomerOrm(db.Model):
@@ -40,6 +40,6 @@ class CustomerOrm(db.Model):
             "c_full_name": self.c_full_name,
             "c_address": self.c_address,
             "c_city": self.c_city,
-            "c_post_code": self.c_post_code,
+            "c_post_code": self.c_postal_code,
             "c_phone_number": self.c_phone_number,
         }
