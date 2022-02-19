@@ -36,6 +36,10 @@ I will be providing information about table relationships and for each table fie
 ### Footnotes
 1. I decided to create one-to-many relationship between Restaurant_Owners and Restaurants because of franchise situation can occur one day and system still will work efficiently for this scenario
 
+### Key Takeaways
+1. This type of order management system requires all of your transactions to have strong consistency.
+2. Strong consistency refers to all access to your restaurant’s inventory being processed sequentially and read from the same state in your restaurant’s inventory system.
+
 ### Acknowledgements
 
  - [ResearchGate | Order Placement System](https://www.researchgate.net/publication/323230406_An_Android-based_Order_Placement_System_for_Restaurants)
