@@ -5,3 +5,4 @@ __pycache__/
 *$py.class
 migrations/
 /venv/
+/1_customer_service/.pytest_cache/
