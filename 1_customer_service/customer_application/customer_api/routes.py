@@ -21,7 +21,7 @@ CUSTOMER_API_ROOT: str = "/burgerzilla-customer/1.0.0"
 ORDER_API_ROOT: str = "http://localhost:5002/burgerzilla-order/1.0.0"
 
 
-# GET : http://0.0.0.0:5001/burgerzilla/v1/customers
+# GET : http://0.0.0.0:5001//burgerzilla-customer/1.0.0/customers
 @c_api_blueprint.route(f"{CUSTOMER_API_ROOT}/customers", methods=["GET"])
 def get_all_customers() -> json:
     """
@@ -31,7 +31,7 @@ def get_all_customers() -> json:
     # create empty customer list
     customers = []
     # loop through all Customer
-    for row in Customer.query.all():
+    for row in CustomerOrm.query.all():
         # append to customer list
         customers.append(row.convert_to_json())
 
