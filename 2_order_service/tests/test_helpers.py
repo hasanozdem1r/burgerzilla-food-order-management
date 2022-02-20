@@ -1,8 +1,7 @@
 """
 This script is used to test helper's functionality
-Hasan Özdemir 02-20-2022
+Hasan Özdemir 02-19-2022
 """
-# path : root/2_order_service/tests/test_helpers.py
 from utils.helpers import generate_secret_key,get_postgres_configurations
 
 def test_generate_secret_key():

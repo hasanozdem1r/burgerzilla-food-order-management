@@ -6,3 +6,4 @@ __pycache__/
 migrations/
 /venv/
 /1_customer_service/.pytest_cache/
+/1_customer_service/tests/.pytest_cache/
