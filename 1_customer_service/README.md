@@ -12,7 +12,7 @@ create database burgerzilla_customer
 ```
 Initialize models on PostgresSQL
 ```bash
-start customer_database.bat
+start db_initialize.bat
 ``` 
 ### Let's run our application
 Run the project with this command

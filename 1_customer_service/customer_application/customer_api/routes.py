@@ -20,8 +20,9 @@ from requests import get
 CUSTOMER_API_ROOT: str = "/burgerzilla-customer/1.0.0"
 ORDER_API_ROOT: str = "http://localhost:5002/burgerzilla-order/1.0.0"
 
-
-# GET : http://0.0.0.0:5001//burgerzilla-customer/1.0.0/customers
+# http://localhost:5001/burgerzilla-customer/1.0.0/customers
+# http://192.168.1.106:5001/burgerzilla-customer/1.0.0/customers
+# GET : http://0.0.0.0:5001/burgerzilla-customer/1.0.0/customers
 @c_api_blueprint.route(f"{CUSTOMER_API_ROOT}/customers", methods=["GET"])
 def get_all_customers() -> json:
     """
