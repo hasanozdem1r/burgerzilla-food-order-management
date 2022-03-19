@@ -68,6 +68,7 @@ poetry run main.py
 * General Management
   * poetry ;Dependency Management for Python
   * flake8 ; Style Guide Enforcement
+  * black ; Style Guide Automatic Apply 
 
 
 
