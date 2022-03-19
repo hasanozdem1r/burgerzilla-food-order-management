@@ -24,12 +24,12 @@ class Customer(BaseModel):
 
 if __name__ == "__main__":
     customer_obj = {
-        "c_email":"hasan@hasan.com",
-        "c_full_name":"Hasan Ozdemir",
-        "c_address":"XYZ Str, KLM",
-        "c_city":"KLM",
-        "c_postal_code":12345,
-        "c_phone_number":"0123456789",
+        "c_email": "hasan@hasan.com",
+        "c_full_name": "Hasan Ozdemir",
+        "c_address": "XYZ Str, KLM",
+        "c_city": "KLM",
+        "c_postal_code": 12345,
+        "c_phone_number": "0123456789",
     }
     if Customer(**customer_obj):
         pass
