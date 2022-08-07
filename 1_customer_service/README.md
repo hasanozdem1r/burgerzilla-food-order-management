@@ -3,7 +3,7 @@
 Those instructions are valid for all microservices under this repository.
 
 ### Prerequisites
-You must pass all steps firstly on this [document](../README.md). 
+You must pass all steps firstly on this [document](../README.md).
 
 ### Database Initialization
 Create a database on PostgresSQL UI or from plsql console
@@ -18,4 +18,4 @@ start db_initialize.bat
 Run the project with this command
 ```bash
 poetry run python run.py
-```     
+```

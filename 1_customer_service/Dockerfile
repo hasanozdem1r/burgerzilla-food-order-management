@@ -25,4 +25,3 @@ RUN poetry install --no-interaction
 
 ADD ./customer_application ./customer_service_source
 RUN poetry install --no-interaction
-

@@ -1,9 +1,9 @@
 ![](4_project_docs/images/burgerzilla_cover_photo.png)
 # Food Order Management with Microservices
 
-This project aim to create bridge between customer and restaurant owners. 
+This project aim to create bridge between customer and restaurant owners.
 
-Customers and restaurant owners can run their own operations based on products 
+Customers and restaurant owners can run their own operations based on products
 
 I decided to provide solutions with microservices approach regarding to suitability
 
@@ -18,7 +18,7 @@ I decided to provide solutions with microservices approach regarding to suitabil
   * [8.License](#8license)
 
 ## 1.Prerequisites
-1. Python 3.9 
+1. Python 3.9
 2. [Poetry](https://python-poetry.org/)  for dependency management
 3. PostgresSQL Local Server
 4. PyCharm / Visual Studio Code
@@ -27,7 +27,7 @@ I decided to provide solutions with microservices approach regarding to suitabil
 
 I used Poetry for virtual environment because it's easier to use and manage the dependencies.
 
-In this section I will be providing installations about prerequisites. 
+In this section I will be providing installations about prerequisites.
 
 1. [Python 3.9](https://python.org/)
 2. [Python Poetry](https://python-poetry.org/docs/)
@@ -46,7 +46,7 @@ Please follow the links for further reading about current microservices
 Please follow the link for further reading about [API's reference](4_project_docs/burgerzilla_api_reference.md)
 
 ## 5.Tech Stack
-**Language:** Python 3.9 
+**Language:** Python 3.9
 
 **Database Server:** PostgresSQL
 

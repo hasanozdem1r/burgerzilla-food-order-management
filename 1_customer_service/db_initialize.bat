@@ -1,5 +1,6 @@
-poetry run flask db init
+poetry shell
+flask db init
 timeout 2
-poetry run flask db migrate
+flask db migrate
 timeout 2
-poetry run flask db upgrade
+flask db upgrade

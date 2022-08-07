@@ -25,7 +25,7 @@
 
 ## Lessons Learned
 
-1. What did I learn while building this project? 
+1. What did I learn while building this project?
     * I get used to more to Poetry
     * I increased my know how about relational databases for big projects
 
@@ -34,4 +34,3 @@
    * My biggest challenge was about microservices. I knew definition, but I had no experience on it.
    * As a solution full one week I've done reading on microservices.io then I connected with Chris Richardson via Linkedin and find out answers for my question.
    * Finally, after 1 week I was able to design my architecture and database diagram
-   
